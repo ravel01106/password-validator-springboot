@@ -16,7 +16,7 @@ internal class PasswordValidatorShould{
     fun ` Permit a password when meet all the conditions`() {
         val passwordValidator = PasswordValidator()
         val result = passwordValidator.isPasswordValid("Manuel_Alejandro1998")
-        assertThat(result).isEqualTo(false)
+        assertThat(result).isEqualTo(true)
     }
 
     @Test
